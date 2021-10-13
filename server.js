@@ -1,6 +1,7 @@
 var express = require('express');
 var cors = require('cors');
 var multer = require('multer');
+const upload = multer({ dest: 'uploads/'});
 var bodyParser = require('body-parser')
 require('dotenv').config()
 
@@ -18,8 +19,9 @@ app.get('/', function (req, res) {
 });
 
 
-app.post('/api/fileanalyse', function (req, res)
+app.post('/api/fileanalyse', upload.single("funy"), function (req, res, next)
 {
+
   res.json({funny: "funny"});
 });
 
