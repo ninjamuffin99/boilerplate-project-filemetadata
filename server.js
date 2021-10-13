@@ -13,7 +13,10 @@ app.get('/', function (req, res) {
 });
 
 
-
+app.post('/api/fileanalyze', function (req, res)
+{
+  res.json(req.body);
+});
 
 const port = process.env.PORT || 3000;
 app.listen(port, function () {
