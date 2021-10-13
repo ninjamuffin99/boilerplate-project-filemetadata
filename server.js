@@ -1,5 +1,6 @@
 var express = require('express');
 var cors = require('cors');
+var multer = require('multer');
 require('dotenv').config()
 
 var app = express();
