@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
 });
 
 
-app.post('/api/fileanalyze', function (req, res)
+app.post('/api/fileanalyse', function (req, res)
 {
   res.json({funny: "funny"});
 });
