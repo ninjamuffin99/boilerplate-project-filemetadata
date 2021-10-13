@@ -19,7 +19,7 @@ app.get('/', function (req, res) {
 });
 
 
-app.post('/api/fileanalyse', upload.single("funy"), function (req, res, next)
+app.post('/api/fileanalyse', upload.single("upfile"), function (req, res, next)
 {
 
   res.json({funny: "funny"});
