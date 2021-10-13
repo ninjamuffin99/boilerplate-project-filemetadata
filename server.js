@@ -15,7 +15,7 @@ app.get('/', function (req, res) {
 
 app.post('/api/fileanalyse', function (req, res)
 {
-  res.json(req.body);
+  res.json({funny: "funny"});
 });
 
 const port = process.env.PORT || 3000;
