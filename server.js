@@ -22,7 +22,7 @@ app.get('/', function (req, res) {
 app.post('/api/fileanalyse', upload.single("upfile"), function (req, res, next)
 {
 
-  res.json({funny: "funny"});
+  res.json({funny: "funny", file: req.file});
 });
 
 const port = process.env.PORT || 3000;
