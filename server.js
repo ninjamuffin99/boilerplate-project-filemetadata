@@ -8,8 +8,9 @@ var app = express();
 
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }))
-
 app.use(bodyParser.json())
+
+
 app.use('/public', express.static(process.cwd() + '/public'));
 
 app.get('/', function (req, res) {
@@ -19,7 +20,7 @@ app.get('/', function (req, res) {
 
 app.post('/api/fileanalyse', function (req, res)
 {
-  res.json({funny: "funny", body: req.body});
+  res.json({funny: "funny"});
 });
 
 const port = process.env.PORT || 3000;
